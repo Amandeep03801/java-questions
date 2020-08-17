@@ -16,18 +16,17 @@ public class Question_10 {
 		boolean palindrome=true;
 		for(int i=0; i<n/2; i++)
 		{
-			if(arr[i]==arr[n-i-1])
+			if(arr[i].equals(arr[n-i-1]))
 			{
 				palindrome=true;
 			}
 			else
 			{
-				System.out.println(i);
 				palindrome=false;
 				break;
 			}
 		}
-		if(palindrome=true)
+		if(palindrome==true)
 		{
 			System.out.println("The above array is a palindrome");
 		}
